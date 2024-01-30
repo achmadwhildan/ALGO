@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        let PABP = parseInt(prompt("masukan nilai PABP"));
+        let Matematika = parseInt(prompt("masukan nilai Matematika"));
+        let DPK = parseInt(prompt("masukan nilai DPK"));
+
+        let mean = (PABP + Matematika + DPK)/3;
+
+        if (mean >= 80 && mean <= 100){
+            grade = "A";
+        } else if (mean >= 75 && mean <= 80){
+            grade = "B"
+        } else if (mean >= 65 && mean <= 75){
+            grade = "C"
+        } else if (mean >= 45 && mean <= 65){
+            grade = "D"
+        } else if (mean >= 0 && mean <= 45){
+            grade = "E"
+        } else {
+            grade = "K"
+        }
+
+        console.log(`nilai iqbal ${grade}`);
+        console.log(`${mean}`)
+    </script>
+</body>
+</html>

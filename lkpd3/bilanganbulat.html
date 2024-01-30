@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //digit no 2
+        let bilangan = prompt("Masukkan bilangan bulat:");
+        let bilangan_string = bilangan.toString();
+        let satuan = parseInt(bilangan_string[bilangan_string.length - 1]) || 0;
+        let puluhan = parseInt(bilangan_string[bilangan_string.length - 2]) || 0;
+        let ratusan = parseInt(bilangan_string[bilangan_string.length - 3]) || 0;
+
+        console.log("Bilangan satuan:", satuan);
+        console.log("Bilangan puluhan:", puluhan);
+        console.log("Bilangan ratusan:", ratusan);
+    </script>
+</body>
+</html>

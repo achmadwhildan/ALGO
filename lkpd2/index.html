@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 1. 
+var namaKaryawan = prompt("Masukkan nama karyawan:");
+var gajiPokok = parseFloat(prompt("Masukkan jumlahnya gaji pokok:"));
+
+
+var tunjangan = 0.2 * gajiPokok;
+
+
+var pajak = 0.15 * (gajiPokok + tunjangan);
+
+
+var gajiBersih = gajiPokok + tunjangan - pajak;
+
+// Menampilkan hasil
+console.log("Nama Karyawan: " + namaKaryawan);
+console.log("Gaji Pokok: " + gajiPokok + " rupiah");
+console.log("Tunjangan: " + tunjangan + " rupiah");
+console.log("Pajak: " + pajak + " rupiah");
+console.log("Gaji Bersih: " + gajiBersih + " rupiah");
+// // end
+
+    </script>
+</body>
+</html>
